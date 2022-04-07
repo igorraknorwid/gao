@@ -1,0 +1,28 @@
+@import "../../../../styles/var";
+
+.search {
+  position: absolute;
+  background-color: #ffffff;
+  z-index: 1;
+  border: 1px solid #e5e4e1;
+  min-width: 460px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: #747887;
+  padding: 20px 20px 20px 65px;
+}
+
+.list > * + * {
+  margin-top: 10px;
+}
+
+.item {
+  cursor: pointer;
+  transition: color 0.2ms ease;
+}
+
+.item:hover {
+  color: #101011;
+}

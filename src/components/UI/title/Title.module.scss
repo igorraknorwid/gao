@@ -1,0 +1,15 @@
+@import "../../../styles/var";
+
+.title,
+.mobile_title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 56px;
+  color: $primaryColor;
+}
+.mobile_title {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+}

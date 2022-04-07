@@ -1,0 +1,77 @@
+.inputfile {
+  width: 270px;
+  height: 270px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.inputfile + label {
+  width: 280px;
+  height: 280px;
+  border: 2px dashed #051655;
+  font-size: 1.25em;
+  font-weight: 700;
+  color: #051655;
+  background-color: #f3f6f9;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+.inputfile:hover + label {
+  border: 2px solid #051655;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+label > div {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+  background-color: #f3f6f9;
+}
+.inputfile + label {
+  cursor: pointer; /* "hand" cursor */
+}
+.inputfile:focus + label {
+  outline: none;
+  // outline: -webkit-focus-ring-color auto 5px;
+}
+.inputfile + label * {
+  pointer-events: none;
+}
+
+.photo {
+  min-width: 280px;
+  height: 280px;
+  border: 2px dashed #051655;
+  object-fit: cover;
+}
+
+.remove_img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: rgb(221, 40, 40);
+  font-size: 20px;
+  opacity: 0.8;
+  transition: all 0.3s ease-in-out;
+}
+.remove_img:hover {
+  font-size: 30px;
+  opacity: 1;
+}
+
+.img_cont {
+  position: relative;
+}

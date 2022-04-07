@@ -1,0 +1,46 @@
+.input_box {
+  margin: 40px 0 0 0;
+  position: relative;
+  min-width: 460px;
+  display: inline-block;
+}
+.img_box {
+  position: absolute;
+  left: 30px;
+  top: 20px;
+}
+
+.input {
+  border: 1px solid;
+  border-color: #e5e4e1;
+  min-width: 460px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: #747887;
+  padding: 20px 20px 20px 65px;
+  transition: border-color 1s ease;
+}
+.mobile_input {
+  border: 1px solid;
+  border-color: #e5e4e1;
+  min-width: 300px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: #747887;
+  padding: 20px 20px 20px 65px;
+  transition: border-color 1s ease;
+}
+
+.input:focus {
+  border-color: #eb3d35;
+}
+
+.search_img {
+  min-width: 460px;
+  display: flex;
+  text-align: center;
+}

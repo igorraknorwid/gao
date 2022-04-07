@@ -1,0 +1,31 @@
+@import "../../../styles/var";
+
+.btn,
+.btn_next {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 24px;
+  color: $thirdColor;
+  background-color: rgba(235, 61, 53, 0.8);
+  padding: 18px 20px 18px 30px;
+  img {
+    transition: all 0.5s ease;
+  }
+  &__box {
+    display: flex;
+    text-align: center;
+  }
+  &__box > * + * {
+    margin-left: 41px;
+  }
+  &:hover {
+    background-color: rgba(235, 61, 53, 1);
+    img {
+      transform: translate(10px);
+    }
+  }
+}
+.btn_next {
+  padding: 18px 50px 18px 50px;
+}

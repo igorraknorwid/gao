@@ -1,0 +1,38 @@
+@import "./reset.scss";
+@import "./var";
+@font-face {
+  font-family: "Author";
+  src: local("Author"),
+    url(../font/Author/Author-Regular.otf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Author";
+  src: local("Author"), url(../font/Author/Author-Medium.otf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  font-family: "Author";
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.container {
+  padding: 0 100px 50px 100px;
+}
+.mobile_container {
+  padding: 20px;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 28px;
+  color: #051655;
+}
