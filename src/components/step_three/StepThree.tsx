@@ -34,6 +34,9 @@ const StepThree: FC = () => {
               placeholder='LinkedIn URL'
               minWidth={720}
             />
+            <div className={styles.error}>
+              {links.linkError.ln ? links.linkError.ln : null}
+            </div>
             <MyImput
               value={links.twitterInput}
               handleInput={(e) => {
@@ -43,6 +46,9 @@ const StepThree: FC = () => {
               placeholder='Twitter URL'
               minWidth={720}
             />
+            <div className={styles.error}>
+              {links.linkError.tw ? links.linkError.tw : null}
+            </div>
           </div>
         </div>
       </div>

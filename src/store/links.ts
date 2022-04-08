@@ -21,8 +21,10 @@ export default class Links {
     const found = str.match(re);
     if (found) {
       this.linkedIn = str;
+      this.linkError.ln = "";
     } else {
       this.linkedIn = "";
+      this.linkError.ln = "LinkedIn URL looks wrong";
     }
   }
   twitterHandler(e: React.ChangeEvent<HTMLInputElement>) {
@@ -33,8 +35,10 @@ export default class Links {
     const found = str.match(re);
     if (found) {
       this.twitter = str;
+      this.linkError.tw = "";
     } else {
       this.twitter = "";
+      this.linkError.tw = "Twitter URL looks wrong";
     }
   }
 }
