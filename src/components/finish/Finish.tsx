@@ -8,7 +8,7 @@ export default () => {
   const { width, height } = useWindowSize();
   React.useEffect(() => {
     setTimeout(() => {
-      document.location.href = "hhttps://gao-iota.vercel.app";
+      document.location.href = "https://gao-iota.vercel.app";
     }, 5000);
   }, []);
   return (
