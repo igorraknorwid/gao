@@ -3,6 +3,11 @@ import Logo from "../UI/logo/Logo";
 import MyBox from "../UI/margins/MyBox";
 
 const NotFound: FC = () => {
+  React.useEffect(() => {
+    setTimeout(() => {
+      document.location.href = "https://gao-iota.vercel.app";
+    }, 5000);
+  }, []);
   return (
     <div style={{ padding: "0 20px" }}>
       <MyBox marginTop={20}>

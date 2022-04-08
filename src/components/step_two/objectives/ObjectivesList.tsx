@@ -11,7 +11,7 @@ const ObjectivesList: FC = () => {
   return (
     <div className={isMobile ? styles.mobile_objectives : styles.objectives}>
       {objectives.arr.map((ob) => {
-        return <ObjectivesItem ob={ob} />;
+        return <ObjectivesItem ob={ob} key={ob._id} />;
       })}
     </div>
   );

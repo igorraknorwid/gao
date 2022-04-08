@@ -9,7 +9,7 @@ interface IObjectivesItem {
 
 const ObjectivesItem: FC<IObjectivesItem> = ({ ob }) => {
   const { objectives } = useContext(Context);
-  const { _id, title, checked } = ob;
+  const { _id, title, checked, disabled } = ob;
   return (
     <div className={styles.objective} key={_id}>
       <img src={`../images/objectives/${title}.png`} alt='#' />
@@ -18,6 +18,7 @@ const ObjectivesItem: FC<IObjectivesItem> = ({ ob }) => {
         className={styles.checkbox}
         type='checkbox'
         checked={checked}
+        disabled={disabled}
         onChange={() => {
           objectives.onChecked(ob._id);
         }}
