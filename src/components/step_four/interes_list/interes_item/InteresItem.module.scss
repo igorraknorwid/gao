@@ -36,3 +36,10 @@
   color: $primaryColor;
   border: 1px solid #051655;
 }
+
+@media only screen and (max-width: 600px) {
+  .item,
+  .item_active {
+    text-decoration: none;
+  }
+}
